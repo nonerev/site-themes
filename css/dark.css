@@ -1,0 +1,2495 @@
+/*
+ * @name Dark
+ * @author mrrpmeowfurry
+ * @description Dark themee :3
+ */
+
+html[data-site-theme="dark"],
+html[data-site-theme="dark"] body {
+    color-scheme: dark;
+    overflow-x: clip;
+    --dark-page: #17171c;
+    --dark-surface: #202127;
+    --dark-surface-raised: #292b33;
+    --dark-border: #3b3e49;
+    --dark-text: #ececf0;
+    --dark-heading: #fff;
+    --dark-muted: #aaa8b5;
+    --dark-accent: #9d70ee;
+    --dark-accent-bright: #bc9af8;
+    --dark-button: #7543b5;
+    --dark-button-hover: #8954cb;
+    --dark-accent-soft: rgba(157, 112, 238, 0.16);
+    --dark-footer: #1e1d25;
+    --bs-body-color: var(--dark-text);
+    --bs-body-color-rgb: 236, 236, 240;
+    --bs-body-bg: var(--dark-page);
+    --bs-body-bg-rgb: 23, 23, 28;
+    --bs-emphasis-color: var(--dark-heading);
+    --bs-secondary-color: var(--dark-muted);
+    --bs-secondary-bg: var(--dark-surface);
+    --bs-tertiary-bg: var(--dark-surface-raised);
+    --bs-border-color: var(--dark-border);
+    --bs-link-color: var(--dark-accent-bright);
+    --bs-link-color-rgb: 188, 154, 248;
+    --bs-link-hover-color: #d2baff;
+    --bs-link-hover-color-rgb: 210, 186, 255;
+    --bs-primary: var(--dark-accent);
+    --bs-primary-rgb: 157, 112, 238;
+    --bs-info: var(--dark-accent);
+    --bs-info-rgb: 157, 112, 238;
+}
+
+html[data-site-theme="dark"] body,
+html[data-site-theme="dark"] body:has(.site-shell.white-page),
+html[data-site-theme="dark"] body:has(.info-page),
+html[data-site-theme="dark"] body.none-landing,
+html[data-site-theme="dark"] body.none-blog,
+html[data-site-theme="dark"] body.none-download-page,
+html[data-site-theme="dark"]:has(> body.none-download-page),
+html[data-site-theme="dark"]:has(> body.none-blog) {
+    background-color: var(--dark-page) !important;
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .site-header {
+    background: linear-gradient(105deg, #17171c 0%, #23222b 68%, #302644 100%);
+    box-shadow: inset 0 -2px 0 var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .site-header .header-search-button .icon-nav-search {
+    filter: brightness(0) invert(1);
+}
+
+html[data-site-theme="dark"] .site-header .header-search-input,
+html[data-site-theme="dark"] .site-header .header-search-button {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-header .header-search-input::placeholder {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .site-header .header-search-menu,
+html[data-site-theme="dark"] .site-header .header-popover,
+html[data-site-theme="dark"] .site-header .header-menu {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-header .header-search-option a,
+html[data-site-theme="dark"] .site-header .header-menu a,
+html[data-site-theme="dark"] .site-header .header-menu a:hover,
+html[data-site-theme="dark"] .site-header .header-menu a:focus {
+    color: var(--dark-text);
+}
+
+/* 2nd shadow fills the gap under short pages */
+html[data-site-theme="dark"] .site-footer {
+    background: var(--dark-footer);
+    box-shadow: inset 0 2px 0 var(--dark-accent), 0 100vh 0 100vh var(--dark-footer);
+}
+
+html[data-site-theme="dark"] .site-footer-links a,
+html[data-site-theme="dark"] .site-footer-links a:link,
+html[data-site-theme="dark"] .site-footer-links a:visited {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .site-footer-links a:hover,
+html[data-site-theme="dark"] .site-footer-links a:focus,
+html[data-site-theme="dark"] .site-footer-note a {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .site-footer-note {
+    color: #978ca9;
+}
+
+html[data-site-theme="dark"] .landing-navbar {
+    background: linear-gradient(105deg, #17171c 0%, #23222b 68%, #302644 100%) !important;
+    border-bottom-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .landing-login-input,
+html[data-site-theme="dark"] .login-table input,
+html[data-site-theme="dark"] .auth-input {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .landing-login-input::placeholder,
+html[data-site-theme="dark"] .auth-input::placeholder {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .login-page,
+html[data-site-theme="dark"] .login-body,
+html[data-site-theme="dark"] .auth-panel,
+html[data-site-theme="dark"] .auth-panel-body {
+    color: var(--dark-text);
+    background-color: var(--dark-surface) !important;
+}
+
+html[data-site-theme="dark"] .login-body h1,
+html[data-site-theme="dark"] .login-body h2,
+html[data-site-theme="dark"] .login-table label,
+html[data-site-theme="dark"] .auth-panel h3,
+html[data-site-theme="dark"] .apply-title,
+html[data-site-theme="dark"] .apply-question {
+    color: var(--dark-heading);
+}
+
+html[data-site-theme="dark"] .login-area {
+    border-bottom-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .login-right {
+    border-left-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] :is(.login-signup p,
+    .login-guest p,
+    .auth-legal,
+    .auth-note,
+    .apply-intro,
+    .apply-status p,
+    .apply-reason) {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .login-forgot a,
+html[data-site-theme="dark"] .login-forgot a:hover,
+html[data-site-theme="dark"] .login-forgot a:focus,
+html[data-site-theme="dark"] .auth-note a,
+html[data-site-theme="dark"] .auth-legal a {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .landing-hero,
+html[data-site-theme="dark"] .landing-about,
+html[data-site-theme="dark"] .landing-devices,
+html[data-site-theme="dark"] .blog-page,
+html[data-site-theme="dark"] .blog-main,
+html[data-site-theme="dark"] .blog-footer {
+    color: var(--dark-text);
+    background-color: var(--dark-page);
+}
+
+html[data-site-theme="dark"] .landing-devices h2,
+html[data-site-theme="dark"] .landing-devices p,
+html[data-site-theme="dark"] .landing-about h1,
+html[data-site-theme="dark"] .landing-about p {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .site-shell,
+html[data-site-theme="dark"] .site-shell .site-main,
+html[data-site-theme="dark"] .site-shell.white-page .site-main {
+    background-color: var(--dark-page) !important;
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .site-shell .site-header {
+    background: linear-gradient(105deg, #17171c 0%, #23222b 68%, #302644 100%);
+    box-shadow: inset 0 -2px 0 var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .site-alert-info {
+    color: #fff !important;
+    background-color: #F68802 !important;
+}
+
+html[data-site-theme="dark"] .site-alert-warning {
+    color: #fff !important;
+    background-color: #E27676 !important;
+}
+
+html[data-site-theme="dark"] .site-alert-success {
+    color: #fff !important;
+    background-color: #02b757 !important;
+}
+
+html[data-site-theme="dark"] .site-alert a,
+html[data-site-theme="dark"] .site-alert-close {
+    color: #fff !important;
+}
+
+html[data-site-theme="dark"] .site-shell .header-links a:hover,
+html[data-site-theme="dark"] .site-shell .header-links a:focus,
+html[data-site-theme="dark"] .site-shell .header-account-links a:hover,
+html[data-site-theme="dark"] .site-shell .header-account-links a:focus,
+html[data-site-theme="dark"] .site-shell .header-icon-item:hover,
+html[data-site-theme="dark"] .site-shell .header-icon-item:focus {
+    color: var(--dark-accent-bright);
+    background-color: var(--dark-accent-soft);
+}
+
+html[data-site-theme="dark"] .site-shell .header-icon-item:hover [class^="icon-nav-"],
+html[data-site-theme="dark"] .site-shell .header-icon-item:focus-visible [class^="icon-nav-"],
+html[data-site-theme="dark"] .site-shell .nav-toggle:hover .icon-nav-menu,
+html[data-site-theme="dark"] .site-shell .header-search-toggle button:hover .icon-nav-search-white {
+    filter: drop-shadow(0 0 2px var(--dark-accent));
+}
+
+html[data-site-theme="dark"] .site-shell .header-search-input,
+html[data-site-theme="dark"] .site-shell .header-search-button {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-shell .header-search-input::placeholder {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .site-shell .header-search-menu,
+html[data-site-theme="dark"] .site-shell .header-popover,
+html[data-site-theme="dark"] .site-shell .header-menu {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-shell .header-search-option a,
+html[data-site-theme="dark"] .site-shell .header-menu a,
+html[data-site-theme="dark"] .site-shell .header-menu a:hover,
+html[data-site-theme="dark"] .site-shell .header-menu a:focus {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .site-shell .header-search-option.selected,
+html[data-site-theme="dark"] .site-shell .header-menu li:hover {
+    background-color: var(--dark-surface-raised);
+    box-shadow: 4px 0 0 0 var(--dark-accent) inset;
+}
+
+html[data-site-theme="dark"] .site-shell .header-popover-arrow {
+    border-bottom-color: var(--dark-surface);
+}
+
+html[data-site-theme="dark"] .site-shell .header-popover-arrow::after {
+    border-bottom-color: var(--dark-surface);
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav,
+html[data-site-theme="dark"] .site-shell.white-page .left-nav {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.65);
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav li a,
+html[data-site-theme="dark"] .site-shell .left-nav-user a,
+html[data-site-theme="dark"] .site-shell .left-nav .left-nav-events {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav [class^="icon-nav-"] {
+    filter: brightness(0) invert(1);
+    opacity: 0.86;
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav li .left-nav-link:hover [class^="icon-nav-"],
+html[data-site-theme="dark"] .site-shell .left-nav li .left-nav-link:focus-visible [class^="icon-nav-"] {
+    filter: brightness(0) invert(1) drop-shadow(0 0 2px var(--dark-accent));
+    opacity: 1;
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav-divider {
+    background-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav li .left-nav-link:hover,
+html[data-site-theme="dark"] .site-shell .left-nav li .left-nav-link:focus-visible,
+html[data-site-theme="dark"] .site-shell .left-nav-user a:hover {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav li .left-nav-link:hover::before,
+html[data-site-theme="dark"] .site-shell .left-nav li .left-nav-link:focus-visible::before {
+    background-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav-count,
+html[data-site-theme="dark"] .site-shell .left-nav .left-nav-upgrade a {
+    color: #fff;
+    background-color: var(--dark-button);
+    border-color: var(--dark-button);
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav .left-nav-upgrade a:hover,
+html[data-site-theme="dark"] .site-shell .left-nav .left-nav-upgrade a:focus {
+    color: #fff;
+    background-color: var(--dark-button-hover);
+    border-color: var(--dark-button-hover);
+}
+
+html[data-site-theme="dark"] .site-shell .left-nav-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(187, 146, 255, 0.35);
+}
+
+html[data-site-theme="dark"] .site-shell .site-footer {
+    background: var(--dark-footer);
+    box-shadow: inset 0 2px 0 var(--dark-accent), 0 100vh 0 100vh var(--dark-footer);
+}
+
+html[data-site-theme="dark"] .site-shell .site-footer-links a,
+html[data-site-theme="dark"] .site-shell .site-footer-links a:link,
+html[data-site-theme="dark"] .site-shell .site-footer-links a:visited {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .site-shell .site-footer-links a:hover,
+html[data-site-theme="dark"] .site-shell .site-footer-links a:focus,
+html[data-site-theme="dark"] .site-shell .site-footer-note a {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .site-shell .site-footer-note {
+    color: #978ca9;
+}
+
+html[data-site-theme="dark"] .site-shell .chat-window {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+html[data-site-theme="dark"] .site-shell .chat-bar {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .site-shell .chat-tab {
+    background: linear-gradient(105deg, #34303e, #493960);
+    box-shadow: inset 0 2px 0 var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .site-shell .chat-compose input,
+html[data-site-theme="dark"] .site-shell .chat-search {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-shell .chat-search input,
+html[data-site-theme="dark"] .site-shell .chat-person,
+html[data-site-theme="dark"] .site-shell .chat-person-name {
+    color: var(--dark-text);
+    background-color: transparent;
+}
+
+html[data-site-theme="dark"] .site-shell .chat-person:hover {
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] .chat-line.mine .chat-who {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .chat-search-icon {
+    filter: brightness(0) invert(1);
+}
+
+html[data-site-theme="dark"] .site-shell .chat-when,
+html[data-site-theme="dark"] .site-shell .chat-empty {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .site-shell .site-main input:not([type="checkbox"]):not([type="radio"]),
+html[data-site-theme="dark"] .site-shell .site-main textarea,
+html[data-site-theme="dark"] .site-shell .site-main select {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-shell .site-main input::placeholder,
+html[data-site-theme="dark"] .site-shell .site-main textarea::placeholder {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .site-shell .site-main a,
+html[data-site-theme="dark"] .site-shell .info-page a,
+html[data-site-theme="dark"] .site-shell .settings-page a {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .site-shell .site-main a:hover,
+html[data-site-theme="dark"] .site-shell .site-main a:focus {
+    color: #d2baff;
+}
+
+html[data-site-theme="dark"] .site-shell .settings-tabs,
+html[data-site-theme="dark"] .site-shell .settings-tab button,
+html[data-site-theme="dark"] .site-shell .settings-card {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+}
+
+html[data-site-theme="dark"] .site-shell .info-page h1,
+html[data-site-theme="dark"] .site-shell .info-page h2,
+html[data-site-theme="dark"] .site-shell .info-page h3,
+html[data-site-theme="dark"] .site-shell .settings-page h1,
+html[data-site-theme="dark"] .site-shell .settings-page h3,
+html[data-site-theme="dark"] .settings-modal-header h4 {
+    color: var(--dark-heading);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-tab button:hover {
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-tab button:hover,
+html[data-site-theme="dark"] .site-shell .settings-tab button:focus-visible,
+html[data-site-theme="dark"] .site-shell .settings-tab.active button {
+    box-shadow: 0 -4px 0 0 var(--dark-accent) inset;
+}
+
+html[data-site-theme="dark"] .site-shell .settings-label,
+html[data-site-theme="dark"] .site-shell .settings-hint,
+html[data-site-theme="dark"] .site-shell .settings-modal-note {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-btn-primary,
+html[data-site-theme="dark"] .site-shell a.settings-btn-primary,
+html[data-site-theme="dark"] .site-shell .games-see-all {
+    color: #fff;
+    background-color: var(--dark-accent);
+    border-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-btn-primary:hover:not(:disabled),
+html[data-site-theme="dark"] .site-shell a.settings-btn-primary:hover,
+html[data-site-theme="dark"] .site-shell .games-see-all:hover,
+html[data-site-theme="dark"] .site-shell .games-see-all:focus {
+    color: #fff;
+    background-color: var(--dark-accent-bright);
+    border-color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-modal-dialog {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] ::selection {
+    color: #fff;
+    background-color: #6d42b5;
+}
+
+html[data-site-theme="dark"] :is(.dropdown-menu,
+    .modal-content,
+    .offcanvas,
+    .popover,
+    .list-group-item,
+    .accordion-item,
+    .accordion-button,
+    .input-group-text,
+    .form-control,
+    .form-select) {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] :is(.form-control, .form-select)::placeholder {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .table> :not(caption)>*>* {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .table {
+    --bs-table-color: var(--dark-text);
+    --bs-table-bg: var(--dark-surface);
+    --bs-table-border-color: var(--dark-border);
+    --bs-table-striped-bg: #25262d;
+    --bs-table-striped-color: var(--dark-text);
+    --bs-table-active-bg: #30313a;
+    --bs-table-active-color: var(--dark-heading);
+    --bs-table-hover-bg: #2b2c34;
+    --bs-table-hover-color: var(--dark-heading);
+}
+
+html[data-site-theme="dark"] :is(.bg-white, .bg-light, .text-bg-light, .btn-light) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .text-dark {
+    color: var(--dark-text) !important;
+}
+
+html[data-site-theme="dark"] .border-light {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.bg-primary, .bg-info, .text-bg-primary, .text-bg-info) {
+    color: #fff !important;
+    background-color: var(--dark-accent) !important;
+}
+
+html[data-site-theme="dark"] :is(.text-primary, .text-info, .link-primary, .link-info) {
+    color: var(--dark-accent-bright) !important;
+}
+
+html[data-site-theme="dark"] :is(.border-primary, .border-info) {
+    border-color: var(--dark-accent) !important;
+}
+
+html[data-site-theme="dark"] :is(.btn-primary, .btn-info, .btn-outline-primary, .btn-outline-info) {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--dark-button);
+    --bs-btn-border-color: var(--dark-button);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--dark-button-hover);
+    --bs-btn-hover-border-color: var(--dark-button-hover);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #8056c8;
+    --bs-btn-active-border-color: #8056c8;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6f6385;
+    --bs-btn-disabled-border-color: #6f6385;
+}
+
+@media (max-width: 991px) {
+    html[data-site-theme="dark"] .site-shell .site-header {
+        box-shadow: inset 0 -2px 0 var(--dark-accent);
+    }
+}
+
+html[data-site-theme="dark"] :is(.home-page,
+    .profile-page,
+    .games-page,
+    .games-row,
+    .game-detail,
+    .settings-page,
+    .friends-page,
+    .inventory-page,
+    .group-page,
+    .group-search-page,
+    .forum-page,
+    .develop-page,
+    .admin-shell,
+    .catalog-page,
+    .catalog-item-page .rbx-content,
+    .avatar-page,
+    .badges-page,
+    .messages-container,
+    .money-page,
+    .bc-body,
+    .sets-page,
+    .info-page,
+    .not-approved-page,
+    .abuse-report-page,
+    .error-page,
+    .nonebux-page,
+    .search-games,
+    .search-people-body,
+    .legacy-search-page) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-page) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-page,
+    .profile-page,
+    .games-page,
+    .game-detail,
+    .friends-page,
+    .inventory-page,
+    .group-page,
+    .group-search-page,
+    .forum-page,
+    .develop-page,
+    .admin-shell,
+    .catalog-page,
+    .catalog-item-page,
+    .avatar-page,
+    .badges-page,
+    .messages-container,
+    .money-page,
+    .bc-body,
+    .sets-page,
+    .info-page,
+    .not-approved-page,
+    .abuse-report-page,
+    .error-page,
+    .nonebux-page,
+    .search-games,
+    .search-people-body,
+    .legacy-search-page) :is(h1, h2, h3, h4, h5, h6, .friends-title, .inventory-title, .profile-title, .profile-lead, .games-row-header h3) {
+    color: var(--dark-heading) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-sheet,
+    .home-game-card-inner,
+    .profile-card,
+    .profile-header-card,
+    .profile-tab-list,
+    .profile-tab-heading,
+    .profile-avatar-panel,
+    .profile-popover,
+    .profile-menu,
+    .profile-items-page a,
+    .profile-view-button,
+    .profile-slide-right,
+    .profile-game-card-inner,
+    .profile-load-more,
+    .profile-modal,
+    .games-filter-menu,
+    .game-card-inner,
+    .game-box,
+    .game-main,
+    .game-popover,
+    .game-detail .game-menu-list,
+    .game-detail .game-tab-list,
+    .game-tab,
+    .game-vip-banner,
+    .badge-list .badge-row,
+    .comments-container .comments-add,
+    .comments-container .rbx-comment-input,
+    .game-store-card,
+    .friends-tabs,
+    .friends-tab-heading,
+    .friends-card,
+    .friends-card-buttons,
+    .friends-popover,
+    .friends-popover-menu,
+    .friends-modal-frame,
+    .friends-modal-content,
+    .friends-modal-dialog,
+    .inventory-dropdown-menu,
+    .inventory-tabs,
+    .inventory-tabs a,
+    .inventory-card-box,
+    .inventory-pager a,
+    .group-search,
+    .group-search-keyword,
+    .group-panel,
+    .group-box,
+    .group-box-body,
+    .group-tab-content,
+    .group-wall,
+    .group-wall-row,
+    .group-admin-tabs,
+    .group-create-form,
+    .group-role-create,
+    .forum-table,
+    .forum-post,
+    .forum-input,
+    .forum-textarea,
+    .forum-page .forum-select,
+    .develop-sort select,
+    .develop-upload-row select,
+    .develop-list-filter select,
+    .develop-text,
+    .develop-select,
+    .develop-gear-wrap,
+    .admin-nav,
+    .admin-main .card-body,
+    .admin-main .card > .table-responsive,
+    .admin-main .card > .admin-list,
+    .admin-main .card > .admin-settings,
+    .admin-table th,
+    .admin-editor > td,
+    .admin-main .table-hover > tbody > tr:hover > *,
+    .admin-chat-log,
+    :where(#categoriesForKeyword),
+    :where(#catalog #SortOptions) select,
+    :where(#catalog) .SmallCatalogItemView,
+    :where(#catalog) .CatalogItemInner,
+    .search-people-input,
+    .legacy-search-form input,
+    .legacy-search-tabs,
+    .legacy-search-results,
+    .legacy-search-notice,
+    .messages-tabs,
+    .messages-tab-heading,
+    .messages-row,
+    .messages-detail,
+    .messages-reply-box,
+    .messages-new,
+    .money-tabs,
+    .trade-modal-body,
+    .trade-request-item,
+    .trade-window,
+    .trade-slot,
+    .trade-inventory-head select,
+    .trade-tile-card,
+    .sets-pane,
+    .sets-item-menu,
+    .sets-add,
+    .sets-modal,
+    .avatar-tab-panel,
+    .color-modal,
+    .outfit-modal-body,
+    .error-card,
+    .warning-card) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .admin-main .alert-success {
+    color: #bde7cd;
+    background-color: #1f382c;
+    border-color: #35664a;
+}
+
+html[data-site-theme="dark"] .admin-main .alert-danger {
+    color: #f1c4c4;
+    background-color: #3a2427;
+    border-color: #714146;
+}
+
+html[data-site-theme="dark"] .admin-main .text-bg-warning {
+    background-color: #79591a !important;
+}
+
+html[data-site-theme="dark"] .group-page .group-tab,
+html[data-site-theme="dark"] .group-page .group-admin-tabs a {
+    color: var(--dark-muted);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .group-page .group-tab:hover,
+html[data-site-theme="dark"] .group-page .group-admin-tabs a:hover {
+    color: var(--dark-heading);
+    background-color: #34313e;
+}
+
+html[data-site-theme="dark"] .group-page .group-tab.active,
+html[data-site-theme="dark"] .group-page .group-admin-tabs a.active {
+    color: var(--dark-heading);
+    background-color: var(--dark-surface);
+    box-shadow: inset 0 -3px 0 var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .group-page .group-check,
+html[data-site-theme="dark"] .group-page .groups-settings-form label,
+html[data-site-theme="dark"] .group-page .group-admin-tabs a {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] :is(.profile-vote-segment,
+    .game-card .vote-mask span,
+    .home-vote-segment) {
+    background-color: var(--dark-surface) !important;
+}
+
+html[data-site-theme="dark"] .profile-about-text.folded::after,
+html[data-site-theme="dark"] .profile-slide-description::after {
+    background: linear-gradient(transparent, var(--dark-surface));
+}
+
+html[data-site-theme="dark"] :is(.site-shell .site-main,
+    .blog-site,
+    .landing-page,
+    .login-page) :is(input:not([type="checkbox"]):not([type="radio"]), textarea, select) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.site-shell .site-main,
+    .blog-site,
+    .landing-page,
+    .login-page) :is(input, textarea)::placeholder {
+    color: var(--dark-muted) !important;
+}
+
+html[data-site-theme="dark"] option {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] :is(.home-btn-control,
+    .profile-modal-button,
+    .profile-action,
+    .friends-btn-control,
+    .friends-ignore-all,
+    .friends-pager button,
+    .profile-3d,
+    .games-filter-btn,
+    .game-btn-control-xs,
+    .game-btn-control-sm,
+    .game-btn-buy,
+    .rbx-comments-see-more,
+    .error-btn-control,
+    .inventory-pager a,
+    .admin-main .btn-outline-primary,
+    .admin-main .btn-outline-secondary,
+    .admin-main .btn-outline-danger,
+    .develop-page a.develop-control,
+    .develop-page a.develop-btn-neutral,
+    .group-button,
+    .forum-button,
+    .messages-btn,
+    .trade-button,
+    .sets-add,
+    .sets-modal button) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.btn-primary-md,
+    .btn-primary,
+    .rbx-btn-primary-sm,
+    .rbx-btn-secondary-xs,
+    .group-create,
+    .download-now,
+    .login-button,
+    .landing-login-button,
+    .auth-button,
+    .btn-get-more,
+    .money-btn-green,
+    .money-btn-purple,
+    .home-btn-secondary,
+    .home-btn-primary,
+    .profile-btn-more,
+    .profile-action-join,
+    .friends-btn-secondary,
+    .games-see-all,
+    .game-btn-secondary,
+    .rbx-post-comment,
+    .settings-btn-primary,
+    .develop-page a.develop-btn,
+    .admin-main .btn-primary,
+    .forum-button-primary,
+    .group-button-primary,
+    .messages-btn-primary,
+    .messages-send,
+    .roblox-comment-button) {
+    color: #fff !important;
+    background: var(--dark-button) !important;
+    border-color: var(--dark-button) !important;
+}
+
+html[data-site-theme="dark"] :is(.btn-primary-md:is(:hover, :focus),
+    .btn-primary:is(:hover, :focus),
+    .rbx-btn-primary-sm:is(:hover, :focus),
+    .rbx-btn-secondary-xs:is(:hover, :focus),
+    .group-create:is(:hover, :focus),
+    .download-now:is(:hover, :focus),
+    .login-button:is(:hover, :focus),
+    .landing-login-button:is(:hover, :focus),
+    .auth-button:is(:hover, :focus),
+    .btn-get-more:is(:hover, :focus),
+    .money-btn-green:is(:hover, :focus),
+    .money-btn-purple:is(:hover, :focus),
+    .home-btn-secondary:hover,
+    .home-btn-secondary:focus,
+    .home-btn-primary:hover,
+    .home-btn-primary:focus,
+    .profile-btn-more:hover,
+    .profile-btn-more:focus,
+    .friends-btn-secondary:hover,
+    .friends-btn-secondary:focus,
+    .games-see-all:hover,
+    .games-see-all:focus,
+    .game-btn-secondary:hover,
+    .game-btn-secondary:focus,
+    .rbx-post-comment:hover,
+    .rbx-post-comment:focus,
+    .settings-btn-primary:hover,
+    .settings-btn-primary:focus,
+    .messages-send:is(:hover, :focus),
+    .roblox-comment-button:is(:hover, :focus)) {
+    color: #fff !important;
+    background: var(--dark-button-hover) !important;
+    border-color: var(--dark-button-hover) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-page,
+    .profile-page,
+    .games-page,
+    .game-detail,
+    .friends-page,
+    .inventory-page,
+    .group-page,
+    .forum-page,
+    .develop-page,
+    .admin-shell,
+    .catalog-page,
+    .catalog-item-page,
+    .avatar-page,
+    .badges-page,
+    .messages-container,
+    .money-page,
+    .bc-body,
+    .sets-page,
+    .info-page,
+    .not-approved-page,
+    .abuse-report-page,
+    .error-page,
+    .nonebux-page,
+    .search-games,
+    .search-people-body) a {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] :is(.home-page,
+    .profile-page,
+    .games-page,
+    .game-detail,
+    .friends-page,
+    .inventory-page,
+    .group-page,
+    .forum-page,
+    .develop-page,
+    .admin-shell,
+    .catalog-page,
+    .catalog-item-page,
+    .avatar-page,
+    .badges-page,
+    .messages-container,
+    .money-page,
+    .bc-body,
+    .sets-page,
+    .info-page,
+    .not-approved-page,
+    .abuse-report-page,
+    .error-page,
+    .nonebux-page,
+    .search-games,
+    .search-people-body) :is(th, td, label, p, li, dt, dd, .game-card-name, .game-card-playing, .game-card-by, .profile-status, .profile-tab-heading, .friends-tab-label, .messages-tab-heading) {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] :is(.home-page .home-game-card-playing,
+    .home-page .home-feed-date,
+    .home-page .home-game-card-by,
+    .profile-page .profile-label,
+    .profile-page .profile-pastnames-text,
+    .profile-page .profile-game-card-by,
+    .games-page .game-card-playing,
+    .games-page .game-card-by,
+    .friends-page .friends-card-label,
+    .messages-page .messages-date,
+    .money-page .money-muted,
+    .admin-shell .text-muted) {
+    color: var(--dark-muted) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-sheet,
+    .home-column .home-sheet,
+    .profile-section,
+    .profile-list,
+    .profile-header-top,
+    .games-row-header,
+    .friends-content,
+    .inventory-content,
+    .group-list,
+    .forum-content,
+    .develop-settings-content,
+    .admin-main .card,
+    .messages-container .messages-detail,
+    .money-filters,
+    .trade-table,
+    .sets-container) {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .games-row-header h3,
+html[data-site-theme="dark"] .games-filter-label,
+html[data-site-theme="dark"] .profile-tab-heading,
+html[data-site-theme="dark"] .friends-tab-label,
+html[data-site-theme="dark"] .inventory-tabs a,
+html[data-site-theme="dark"] .messages-tab-heading {
+    color: var(--dark-heading) !important;
+}
+
+html[data-site-theme="dark"] .games-scroller {
+    background-color: rgba(41, 43, 51, 0.94) !important;
+    box-shadow: 0 0 3px 0 var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .games-filter-arrow,
+html[data-site-theme="dark"] .games-scroller-arrow span {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+html[data-site-theme="dark"] .games-filter-btn:hover .games-filter-arrow,
+html[data-site-theme="dark"] .games-filter-btn:focus .games-filter-arrow,
+html[data-site-theme="dark"] .games-scroller:hover .games-scroller-arrow span {
+    filter: brightness(0) invert(1) drop-shadow(0 0 2px var(--dark-accent));
+    opacity: 1;
+}
+
+html[data-site-theme="dark"] .site-shell .site-main hr,
+html[data-site-theme="dark"] .site-shell .site-main :is(.divider-top, .divider-bottom, .divider-left, .divider-right) {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] ::-webkit-scrollbar {
+    background-color: var(--dark-page);
+}
+
+html[data-site-theme="dark"] ::-webkit-scrollbar-thumb {
+    background-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] :is(.blog-notch span,
+    .blog-main,
+    .blog-footer,
+    .game-search-item,
+    .section-content,
+    .rbx-tabs-horizontal .rbx-nav-tabs,
+    .avatar-3d-toggle,
+    .chat-create-button,
+    .catalog-item-page .StandardPanelWhite,
+    .StandardPanelContainer .StandardPanelWhite,
+    #ItemContainer .SquareTabGray.selected,
+    .SellItemModal .PurchaseModalBody,
+    .purchase-overlay .confirm-body,
+    .AjaxCommentsContainer .Comments .loading,
+    .trade-modal,
+    .trade-offer-panel,
+    .trade-window,
+    .sets-pane,
+    .sets-item,
+    .sets-add-list .sets-item,
+    .sets-modal,
+    .blog-post,
+    .blog-page-header,
+    .blog-post-content,
+    .group-search-box,
+    .nonebux-grid .cell-content,
+    .game-detail .game-main,
+    .comments-loading,
+    .rbx-btn-control-sm,
+    .rbx-btn-control-xs) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .blog-notch-left::after {
+    border-left-color: var(--dark-surface) !important;
+}
+
+html[data-site-theme="dark"] .blog-notch-right::after {
+    border-bottom-color: var(--dark-surface) !important;
+}
+
+html[data-site-theme="dark"] :is(.blog-page-header h1,
+    .blog-post h1,
+    .blog-post h2,
+    .blog-post h3,
+    .catalog-page h1,
+    .catalog-page h2,
+    .catalog-page h3,
+    .catalog-item-body h1,
+    .catalog-item-body h2,
+    .catalog-item-body h3,
+    .forum-page h1,
+    .forum-page h2,
+    .forum-page h3,
+    .group-page h2,
+    .group-page h3,
+    .develop-page h1,
+    .develop-page h2,
+    .develop-page h3,
+    .admin-shell h1,
+    .admin-shell h2,
+    .admin-shell h3,
+    .messages-container h1,
+    .messages-container h2,
+    .messages-container h3,
+    .money-page h1,
+    .money-page h2,
+    .money-page h3,
+    .sets-page h1,
+    .sets-page h2,
+    .sets-page h3) {
+    color: var(--dark-heading) !important;
+}
+
+html[data-site-theme="dark"] :is(.catalog-page,
+    .catalog-item-body,
+    .forum-page,
+    .group-page,
+    .develop-page,
+    .admin-shell,
+    .avatar-page,
+    .badges-page,
+    .money-page,
+    .bc-body,
+    .sets-page) :is(input, select, textarea) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.admin-me img,
+    .admin-thumb,
+    .admin-avatar,
+    .sets-list img,
+    .sets-icon img) {
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.catalog-page a:link,
+    .catalog-page a:visited,
+    .catalog-item-body a:link,
+    .catalog-item-body a:visited,
+    .forum-page a,
+    .group-page a,
+    .sets-page a,
+    .messages-container a,
+    .money-page a) {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] :is(.catalog-page .btn-control,
+    .catalog-page .btn-primary,
+    .catalog-item-body .btn-control,
+    .rbx-btn-control-sm,
+    .rbx-btn-control-xs,
+    .forum-page .forum-button,
+    .group-button,
+    .trade-modal .trade-button,
+    .sets-page .sets-item-menu button,
+    .sets-page .sets-modal button) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+    background-image: none !important;
+}
+
+html[data-site-theme="dark"] :is(.catalog-page .btn-primary,
+    .forum-page .forum-button-primary,
+    .group-button-primary,
+    .trade-send,
+    .sets-btn-large,
+    .btn-checkout) {
+    color: #fff !important;
+    background-color: var(--dark-button) !important;
+    border-color: var(--dark-button) !important;
+    background-image: none;
+}
+
+html[data-site-theme="dark"] :is(.catalog-page .btn-primary:hover,
+    .forum-page .forum-button-primary:hover,
+    .group-button-primary:hover,
+    .sets-btn-large:hover,
+    .btn-checkout:hover,
+    .btn-checkout:focus) {
+    color: #fff !important;
+    background-color: var(--dark-button-hover) !important;
+    border-color: var(--dark-button-hover) !important;
+}
+
+html[data-site-theme="dark"] :is(.game-tab-label,
+    .game-menu-list button,
+    .rbx-comment-count,
+    .profile-status-text,
+    .admin-stat-number,
+    .admin-card-title,
+    .bc-body .product-description,
+    .forum-crumbs,
+    .forum-crumb-tail,
+    .forum-small,
+    .forum-pager,
+    .forum-check,
+    .forum-locked,
+    .forum-original,
+    .forum-author-link span) {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] :is(.game-share-btn,
+    .profile-about-toggle,
+    .settings-link) {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] :is(.profile-game-card-playing,
+    .admin-side-foot,
+    .admin-stat-sub,
+    .admin-muted,
+    .admin-empty,
+    .inventory-empty,
+    .game-detail .game-off,
+    .game-detail .game-vip-message,
+    .game-vip-members button,
+    .group-empty,
+    .group-wall-note,
+    .no-results,
+    .money-promotion-periods button,
+    .money-chart-tick span,
+    .money-chart-unit,
+    .money-chart-legend,
+    .money-chart-times) {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] :is(.admin-empty,
+    .inventory-empty,
+    .game-detail .game-off,
+    .forum-empty,
+    .forum-row,
+    .group-list,
+    .group-controls,
+    .group-shout,
+    .group-wall-content,
+    .develop-widget-name,
+    .develop-tab.active,
+    .develop-nav-link.active,
+    .money-table th,
+    .money-tabs li,
+    .avatar-tab,
+    .avatar-type-selector,
+    .outfit-menu) {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .money-tabs {
+    background-image: linear-gradient(var(--dark-border), var(--dark-border));
+}
+
+html[data-site-theme="dark"] .money-tabs li.selected {
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] :is(.money-table,
+    .money-table th,
+    .money-table td,
+    .game-play,
+    .game-stat,
+    .profile-header-top,
+    .settings-row,
+    .settings-modal-header,
+    .admin-nav-section,
+    .admin-list li,
+    .forum-table th,
+    .forum-table td,
+    .group-panel h2,
+    .group-box h3,
+    .develop-tabs,
+    .develop-nav,
+    .develop-widget,
+    .develop-list) {
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .catalog-page :is(#dropdownUl,
+    .slideOut,
+    .CatalogHoverContent,
+    .CatalogItemInner) {
+    background-color: var(--dark-surface) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .catalog-page #dropdown :is(a, span),
+html[data-site-theme="dark"] .catalog-page #CatalogLink {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .catalog-page #dropdown :is(.assetTypeFilter, .gearFilter) {
+    color: var(--dark-accent-bright) !important;
+}
+
+html[data-site-theme="dark"] .catalog-page .no-results {
+    color: var(--dark-muted) !important;
+}
+
+html[data-site-theme="dark"] #catalog :is(.robux-price, .robux, .SalesText) {
+    color: #74ce97;
+}
+
+html[data-site-theme="dark"] #catalog .tickets {
+    color: #e3bd72;
+}
+
+html[data-site-theme="dark"] #catalog :is(.NoPrivateSellersText, .NotAPrice),
+html[data-site-theme="dark"] .nonebux-footer {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .catalog-page #dropdown li:hover {
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] #Summary .BuyPriceBox,
+html[data-site-theme="dark"] #ItemContainer .SquareTabGray,
+html[data-site-theme="dark"] #ItemContainer .gear-menu,
+html[data-site-theme="dark"] .SellItemModal {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] #ItemContainer :is(.stat, .FavoriteStar, .SquareTabGray a),
+html[data-site-theme="dark"] #Summary .BuyPriceBoxContainer .FavoriteStar {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] #ItemContainer :is(a.stat:link, a.stat:visited, .gear-menu a, .gear-menu button),
+html[data-site-theme="dark"] #Summary .BuyPriceBoxContainer .favorite-toggle {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] #Summary .BuyPriceBox :is(.footnote, .NoSellers),
+html[data-site-theme="dark"] #Summary .BuyPriceBoxContainer .item-status,
+html[data-site-theme="dark"] #UserSalesTab .empty,
+html[data-site-theme="dark"] #FreeGames .SEOLinksContainer {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] #Summary .BuyPriceBox .Remaining,
+html[data-site-theme="dark"] #Summary .BuyPriceBoxContainer .item-status.error {
+    color: #f28b8b;
+}
+
+html[data-site-theme="dark"] #Summary .BuyPriceBox .robux-text,
+html[data-site-theme="dark"] #ItemContainer :is(.robux, .robux-text),
+html[data-site-theme="dark"] .SellItemModal .robux {
+    color: #74ce97;
+}
+
+html[data-site-theme="dark"] #ItemContainer .tickets {
+    color: #e3bd72;
+}
+
+html[data-site-theme="dark"] .PriceGraph :is(.plot, .legend) {
+    fill: var(--dark-surface);
+}
+
+html[data-site-theme="dark"] .PriceGraph :is(.axis, .legend-text, .empty-text) {
+    fill: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .PriceGraph :is(.grid, .frame) {
+    stroke: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .PriceGraph .line {
+    stroke: #74ce97;
+}
+
+html[data-site-theme="dark"] .PriceGraph .dot {
+    fill: #74ce97;
+}
+
+html[data-site-theme="dark"] .AjaxCommentsContainer {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .AjaxCommentsContainer :is(.CommentText, .Post) {
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .AjaxCommentsContainer :is(.CommentText, .Post)::before {
+    border-top-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .AjaxCommentsContainer :is(.CommentText, .Post)::after {
+    border-top-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] .AjaxCommentsContainer :is(.footnote, .empty) {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .AjaxCommentsContainer .DeleteCommentButton {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] :is(.messages-pager-btn, .messages-icon-btn) {
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] :is(.avatar-tabs button,
+    .avatar-tabs button.tab-active,
+    .avatar-type-option.selected,
+    .avatar-type-option:hover,
+    .wardrobe-categories a.selected,
+    .wardrobe-categories a:hover,
+    .avatar-pager span span,
+    .avatar-pager a:not(.disabled):hover,
+    .outfit-menu-list,
+    .outfit-modal) {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .avatar-tabs button.tab-active {
+    background-color: var(--dark-surface);
+    border-top-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .avatar-type-option input {
+    background: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .avatar-type-option input:checked {
+    background: radial-gradient(circle, var(--dark-accent-bright) 0 2.5px, transparent 3px), var(--dark-surface);
+}
+
+html[data-site-theme="dark"] :is(.home-friend-name,
+    .get-more-text,
+    .outfit-menu-list button,
+    .avatar-page .outfit-menu-list a,
+    .group-rank span) {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] :is(.avatar-status,
+    .avatar-page .avatar-pager a.disabled,
+    .group-owner,
+    .group-rank,
+    .group-status-by span,
+    .group-wall-time) {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .group-text-button {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] :is(.home-vote-background, .home-vote-segment, .avatar-divider),
+html[data-site-theme="dark"] .game-card .vote-background {
+    background-color: var(--dark-border);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] :is(.btn-control-small, .btn-control-large, #ItemContainer .thumb-3d, .landing-toggle, .inventory-dropdown-btn) {
+    color: var(--dark-text);
+    background: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] :is(.friends-tab.active, .friends-tab:hover, .friends-tab:focus-within) .friends-tab-heading {
+    box-shadow: 0 -4px 0 var(--dark-accent) inset;
+}
+
+html[data-site-theme="dark"] .catalog-page #categoriesForKeyword {
+    background-image: none;
+    appearance: auto;
+}
+
+html[data-site-theme="dark"] :is(.money-btn-control,
+    .forum-button,
+    .group-button,
+    .develop-control) {
+    color: var(--dark-text) !important;
+    background: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .forum-page .forum-empty {
+    color: var(--dark-text) !important;
+}
+
+html[data-site-theme="dark"] .develop-page .develop-tab.active,
+html[data-site-theme="dark"] .develop-page a.develop-tab.active {
+    color: var(--dark-heading) !important;
+    background-color: var(--dark-surface) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.game-play-btn,
+    .inventory-more-btn) {
+    color: #fff !important;
+    background-color: #16733d;
+    border-color: #16733d;
+}
+
+html[data-site-theme="dark"] :is(.game-play-btn,
+    .inventory-more-btn):is(:hover, :focus-visible) {
+    background-color: #198044;
+    border-color: #198044;
+}
+
+html[data-site-theme="dark"] :is(.messages-btn-secondary,
+    .money-promotion-periods button.selected) {
+    color: #fff !important;
+    background-color: var(--dark-button);
+    border-color: var(--dark-button);
+}
+
+html[data-site-theme="dark"] .messages-btn-secondary:hover {
+    background-color: var(--dark-button-hover);
+    border-color: var(--dark-button-hover);
+}
+
+html[data-site-theme="dark"] :is(.game-vote.down,
+    .bc-body .nbc-product,
+    .group-danger-link) {
+    color: #f28b8b;
+}
+
+html[data-site-theme="dark"] :is(.money-amount strong,
+    .money-total strong,
+    .money-currency-form output) {
+    color: #74ce97;
+}
+
+html[data-site-theme="dark"] :is(.messages-alert.error,
+    .money-error,
+    .bc-body .notice.error,
+    .group-danger-zone) {
+    color: #f1c4c4;
+    background-color: #3a2427;
+    border-color: #714146;
+}
+
+html[data-site-theme="dark"] .money-status {
+    color: var(--dark-text);
+    background-color: var(--dark-accent-soft);
+    border-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] :is(.admin-nav-link:hover,
+    .admin-nav-link.active,
+    .forum-row:hover,
+    .group-page .group-list-item:hover,
+    .develop-tab:hover,
+    .develop-nav-link:hover,
+    .money-tabs li:hover) {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] .admin-nav-link.active {
+    border-left-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .game-popover::before,
+html[data-site-theme="dark"] .profile-popover-arrow,
+html[data-site-theme="dark"] .friends-popover::before {
+    border-bottom-color: var(--dark-surface);
+}
+
+html[data-site-theme="dark"] .game-popover.left::after {
+    border-left-color: var(--dark-surface);
+}
+
+html[data-site-theme="dark"] :is(.games-row,
+    .game-card-inner,
+    .home-game-card-inner,
+    .profile-game-card-inner,
+    .games-scroller,
+    .profile-card,
+    .profile-header-card,
+    .profile-tab-list) {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.48) !important;
+}
+
+html[data-site-theme="dark"] .games-scroller {
+    background-color: rgba(41, 43, 51, 0.94) !important;
+    box-shadow: 0 0 3px 0 var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.profile-headshot,
+    .profile-3d,
+    .profile-tab-heading) {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .profile-3d,
+html[data-site-theme="dark"] .profile-tab-heading {
+    background-color: var(--dark-surface) !important;
+    color: var(--dark-text) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-avatar,
+    .home-friend-avatar,
+    .home-feed-avatar img,
+    .profile-headshot,
+    .profile-friend-thumb,
+    .comments-container .comment-item .avatar) {
+    background-color: var(--dark-surface) !important;
+    border-color: var(--dark-border) !important;
+    box-shadow: none !important;
+}
+
+html[data-site-theme="dark"] .home-friend-avatar img {
+    border-color: var(--dark-border) !important;
+    box-shadow: none !important;
+}
+
+html[data-site-theme="dark"] .friends-card-avatar {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.profile-friend-thumb img,
+    .profile-asset img,
+    .profile-badge-icon,
+    .profile-picker-item img) {
+    border-color: var(--dark-border) !important;
+    box-shadow: none !important;
+}
+
+html[data-site-theme="dark"] :is(.game-icon-more,
+    .profile-icon-more,
+    .profile-icon-grid,
+    .profile-icon-slideshow,
+    .friends-card-more-icon,
+    .inventory-pager a span,
+    .friends-pager button span,
+    .settings-edit,
+    .friends-tip-icon,
+    .game-icon-moreinfo) {
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+html[data-site-theme="dark"] :is(.profile-asset img,
+    .profile-picker-item img) {
+    background-color: var(--dark-surface) !important;
+}
+
+html[data-site-theme="dark"] :is(.friends-popover-menu li:hover,
+    .profile-menu li:hover,
+    .game-menu-list li:hover,
+    .games-filter-menu a:hover,
+    .games-filter-menu a:focus) {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    box-shadow: 4px 0 0 0 var(--dark-accent) inset;
+}
+
+html[data-site-theme="dark"] :is(.friends-popover-menu button,
+    .profile-menu button,
+    .profile-status-edit,
+    .profile-picker-item,
+    .game-card-name,
+    .rbx-comment-count) {
+    color: var(--dark-text) !important;
+}
+
+html[data-site-theme="dark"] :is(.game-tab.active,
+    .game-tab:hover,
+    .game-tab:focus-visible,
+    .profile-tab.active .profile-tab-heading,
+    .profile-tab:hover .profile-tab-heading,
+    .profile-tab-heading:focus-visible) {
+    box-shadow: 0 -4px 0 0 var(--dark-accent) inset;
+}
+
+html[data-site-theme="dark"] :is(.profile-about-footer,
+    .profile-slide-description,
+    .profile-game-card-footer,
+    .profile-modal-header,
+    .profile-modal-footer,
+    .home-game-card-footer,
+    .game-card-footer,
+    .game-stats,
+    .game-store-caption,
+    .game-server-left,
+    .games-scroller,
+    .comments-container .comment-item) {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.site-main a,
+    .site-main button,
+    .site-main input,
+    .site-main textarea,
+    .site-main select,
+    .chat-bar input):focus-visible {
+    outline: 2px solid var(--dark-accent-bright);
+    outline-offset: 2px;
+}
+
+html[data-site-theme="dark"] :is(.profile-items-panel,
+    .profile-items-mask) {
+    background-color: #432d58 !important;
+}
+
+html[data-site-theme="dark"] .profile-items-mask {
+    background-color: rgba(18, 16, 24, 0.34) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-avatar,
+    .home-avatar img,
+    .home-friend-avatar,
+    .home-friend-avatar img,
+    .home-feed-avatar img,
+    .profile-headshot,
+    .profile-headshot img,
+    .profile-friend-thumb,
+    .profile-friend-thumb img,
+    .profile-asset img,
+    .profile-badge-icon,
+    .profile-picker-item img,
+    .friends-card-avatar,
+    .friends-card-image,
+    .friends-avatar,
+    .friends-avatar img,
+    .messages-avatar,
+    .game-board-avatar,
+    .forum-avatar,
+    .trade-request-avatar img,
+    .search-people-avatar img,
+    .group-member-avatar img,
+    .group-wall-avatar img,
+    .admin-me img,
+    .admin-thumb,
+    .admin-avatar) {
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+    box-shadow: none !important;
+}
+
+html[data-site-theme="dark"] :is(.home-avatar,
+    .home-friend-avatar,
+    .home-feed-avatar img,
+    .profile-headshot,
+    .profile-friend-thumb,
+    .profile-asset img,
+    .profile-badge-icon,
+    .friends-card-avatar,
+    .messages-avatar,
+    .comments-container .comment-item .avatar) {
+    border: 1px solid var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.profile-friend-avatar,
+    .friends-card-avatar-link) {
+    background-color: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+html[data-site-theme="dark"] :is(.home-sheet,
+    .home-game-card-inner,
+    .profile-header-card,
+    .profile-card,
+    .profile-avatar-panel,
+    .profile-3d,
+    .profile-items-page a,
+    .profile-game-card-inner,
+    .profile-modal,
+    .games-row,
+    .game-card-inner,
+    .game-box,
+    .game-main,
+    .game-popover,
+    .game-vip-banner,
+    .game-store-card,
+    .game-board-items,
+    .comments-container .comments-add,
+    .comments-container .rbx-comment-input,
+    .friends-content,
+    .friends-card,
+    .friends-card-buttons,
+    .friends-popover,
+    .friends-popover-menu,
+    .friends-modal-frame,
+    .friends-modal-content,
+    .friends-modal-dialog,
+    .inventory-dropdown-menu,
+    .inventory-tabs,
+    .inventory-tabs a,
+    .inventory-card-box,
+    .inventory-pager a,
+    .group-panel,
+    .group-box,
+    .group-box-body,
+    .group-tab-content,
+    .group-wall,
+    .group-wall-row,
+    .forum-table,
+    .forum-post,
+    .forum-input,
+    .forum-textarea,
+    .develop-sheet,
+    .develop-text,
+    .admin-nav,
+    .admin-main .card-body,
+    .admin-main .card > .table-responsive,
+    .admin-main .card > .admin-list,
+    .admin-main .card > .admin-settings,
+    .messages-row,
+    .messages-detail,
+    .messages-reply-box,
+    .messages-new,
+    .money-tabs,
+    .trade-modal-body,
+    .trade-request-item,
+    .trade-window,
+    .trade-slot,
+    .sets-pane,
+    .sets-item,
+    .sets-modal,
+    .avatar-tab-panel,
+    .color-modal,
+    .outfit-modal-body,
+    .error-card,
+    .warning-card,
+    .legacy-search-results,
+    .legacy-search-notice,
+    .catalog-item-page .rbx-content,
+    #catalog .SmallCatalogItemView,
+    #catalog .CatalogItemInner) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-game-card-inner,
+    .game-card-inner,
+    .profile-game-card-inner,
+    .games-row,
+    .inventory-card-box,
+    .friends-card,
+    .comments-container .comments-add,
+    .profile-card,
+    .profile-header-card) {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.48) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-game-card-inner:hover,
+    .game-card:hover .game-card-inner,
+    .profile-game-card-inner:hover,
+    .friends-card:hover,
+    .inventory-card-box:hover,
+    .comments-container .comment-item .avatar:hover) {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.72) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-feed-item,
+    .profile-about-footer,
+    .profile-slide-description,
+    .profile-game-card-footer,
+    .profile-modal-header,
+    .profile-modal-footer,
+    .home-game-card-footer,
+    .game-card-footer,
+    .game-stats,
+    .game-store-caption,
+    .game-server-left,
+    .comments-container .comment-item,
+    .messages-row,
+    .group-wall-row,
+    .forum-table th,
+    .forum-table td,
+    .settings-row,
+    .trade-request-partner) {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-feed-avatar img,
+    .profile-headshot,
+    .profile-friend-thumb,
+    .friends-card-avatar,
+    .messages-avatar,
+    .game-board-avatar,
+    .forum-avatar,
+    .trade-request-avatar,
+    .search-people-avatar,
+    .group-member-avatar,
+    .group-wall-avatar) img {
+    border-color: var(--dark-border) !important;
+    box-shadow: none !important;
+}
+
+html[data-site-theme="dark"] :is(.home-page,
+    .profile-page,
+    .games-page,
+    .game-detail,
+    .friends-page,
+    .inventory-page,
+    .group-page,
+    .group-search-page,
+    .forum-page,
+    .develop-page,
+    .admin-shell,
+    .catalog-page,
+    .catalog-item-body,
+    .avatar-page,
+    .badges-page,
+    .messages-container,
+    .money-page,
+    .nonebux-page,
+    .sets-page,
+    .info-page,
+    .not-approved-page,
+    .abuse-report-page,
+    .error-page,
+    .search-games,
+    .search-people-body,
+    .legacy-search-page) {
+    color: var(--dark-text) !important;
+}
+
+html[data-site-theme="dark"] :is(.home-page,
+    .profile-page,
+    .games-page,
+    .game-detail,
+    .friends-page,
+    .inventory-page,
+    .group-page,
+    .group-search-page,
+    .forum-page,
+    .develop-page,
+    .admin-shell,
+    .catalog-page,
+    .catalog-item-body,
+    .avatar-page,
+    .badges-page,
+    .messages-container,
+    .money-page,
+    .nonebux-page,
+    .sets-page,
+    .info-page,
+    .not-approved-page,
+    .abuse-report-page,
+    .error-page,
+    .search-games,
+    .search-people-body,
+    .legacy-search-page) :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, label, th, td) {
+    color: var(--dark-text) !important;
+}
+
+html[data-site-theme="dark"] :is(.messages-row.unread,
+    .group-wall-row,
+    .group-wall-row.odd,
+    .search-people-row:hover,
+    .inventory-tabs a:hover,
+    .inventory-dropdown-menu a:hover,
+    .forum-row:hover) {
+    background-color: var(--dark-surface-raised) !important;
+}
+
+html[data-site-theme="dark"] :is(.avatar-page input:not([type="checkbox"]):not([type="radio"]),
+    .avatar-page select,
+    .avatar-page textarea,
+    .catalog-page input,
+    .catalog-page select,
+    .catalog-page textarea,
+    .catalog-item-body input,
+    .catalog-item-body select,
+    .catalog-item-body textarea,
+    .develop-page input,
+    .develop-page select,
+    .develop-page textarea,
+    .forum-page input,
+    .forum-page select,
+    .forum-page textarea,
+    .groups-page input,
+    .groups-page select,
+    .groups-page textarea,
+    .inventory-page input,
+    .inventory-page select,
+    .inventory-page textarea,
+    .messages-container input,
+    .messages-container select,
+    .messages-container textarea,
+    .settings-page input,
+    .settings-page select,
+    .settings-page textarea,
+    .trade-window input,
+    .trade-window select,
+    .trade-window textarea) {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+/* ::placeholder doesnt work inside :is() */
+html[data-site-theme="dark"] :is(.avatar-page,
+    .catalog-page,
+    .catalog-item-body,
+    .develop-page,
+    .forum-page,
+    .inventory-page,
+    .messages-container,
+    .settings-page,
+    .trade-window) :is(input, textarea)::placeholder {
+    color: var(--dark-muted) !important;
+}
+
+html[data-site-theme="dark"] :is(.profile-asset img,
+    .profile-badge-icon,
+    .profile-picker-item img,
+    .admin-thumb,
+    .admin-avatar,
+    .sets-list img,
+    .sets-icon img) {
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.profile-items-page a,
+    .profile-3d,
+    .friends-card-avatar,
+    .friends-card-avatar-link,
+    .friends-card-image,
+    .profile-headshot,
+    .profile-friend-thumb,
+    .profile-asset img,
+    .profile-badge-icon,
+    .messages-avatar,
+    .home-avatar,
+    .home-friend-avatar) {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.site-main hr,
+    .site-main :is(.divider-top, .divider-bottom, .divider-left, .divider-right),
+    .profile-header-top,
+    .profile-tab-list,
+    .profile-tab-heading,
+    .friends-tabs,
+    .friends-content,
+    .inventory-content,
+    .group-list,
+    .forum-content,
+    .develop-tabs,
+    .develop-nav,
+    .messages-tabs,
+    .money-table,
+    .sets-container) {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] :is(.error-text, .error-message, .warning-text) {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .error-page :is(.error-title, .warning-title, .warning-address, strong) {
+    color: var(--dark-heading) !important;
+}
+
+html[data-site-theme="dark"] .error-page .warning-card-foot {
+    color: var(--dark-muted) !important;
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .warning-foot a {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .warning-foot a:hover {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .error-actions .error-btn-control:is(:hover, :focus) {
+    background-color: var(--dark-border) !important;
+    box-shadow: none;
+}
+
+html[data-site-theme="dark"] .error-page :is(button, a):focus-visible {
+    outline: 2px solid var(--dark-accent-bright);
+    outline-offset: 3px;
+}
+
+html[data-site-theme="dark"] .blog-site :is(.blog-post-title a, .blog-more li a, .blog-more-all a, .blog-post-content a:not(.blog-button), .blog-page-number:not(.blog-page-current)),
+html[data-site-theme="dark"] #RedeemContainer a,
+html[data-site-theme="dark"] .bc-body .BigLinks a {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .bc-body #MoreInfo .GameCardPromo,
+html[data-site-theme="dark"] .bc-body .BigLinks,
+html[data-site-theme="dark"] .checkout-done-name {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .checkout-steps span,
+html[data-site-theme="dark"] .payment-logo {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .checkout-steps span.on {
+    color: #fff;
+    background-color: var(--dark-button);
+}
+
+html[data-site-theme="dark"] :is(.checkout-steps i, .develop-separator),
+html[data-site-theme="dark"] .sets-tabs::after {
+    background-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] :is(
+    .checkout-order,
+    .checkout-summary div,
+    .checkout-credit .due,
+    #RedeemContainer,
+    #CodeInput,
+    .group-search-table th,
+    .group-search-table td,
+    .trade-inventory-divider,
+    .sets-list li,
+    .sets-modal-row img,
+    .user-ad-item .develop-thumb a,
+    .user-ad-item .develop-thumb span,
+    .admin-ad-preview
+) {
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] :is(
+    .money-currency-arrow,
+    .trade-value,
+    .trade-modal-title,
+    .trade-request-text,
+    .trade-tile-info > span,
+    .trade-inventory-empty,
+    .sets-stat,
+    .sets-url,
+    .forum-label,
+    .forum-note,
+    .develop-label,
+    .develop-stats span,
+    .user-ad-identification,
+    .user-ad-stats b
+) {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] :is(
+    .trade-value b,
+    .trade-tile-data,
+    .checkout-credit .credit
+) {
+    color: #77d9a0;
+}
+
+html[data-site-theme="dark"] :is(
+    .trade-tile-name,
+    .trade-request-item span,
+    .sets-item-link,
+    .sets-text-link
+) {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] :is(
+    .trade-request-expires,
+    .trade-modal-id,
+    .trade-tile-label,
+    .sets-stat-label,
+    .sets-hint,
+    .admin-main .form-label,
+    .admin-main .form-text,
+    .user-ad .user-ad-report,
+    .user-ad-for,
+    .user-ad-stats span,
+    .user-ad-balance,
+    .create-ad-size,
+    .create-ad-note
+) {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] :is(
+    .checkout-pin-error,
+    .checkout-credit .short .left,
+    .sets-error,
+    .develop-error,
+    .user-ad-state.rejected,
+    .settings-theme-error
+) {
+    color: #ffaaa6;
+}
+
+html[data-site-theme="dark"] .trade-window-error {
+    color: #ffcbc8;
+    background-color: #3a2427;
+    border-color: #714146;
+}
+
+/* the send sprite hides its text */
+html[data-site-theme="dark"] .trade-send {
+    font-size: 18px;
+    font-family: inherit;
+}
+
+html[data-site-theme="dark"] .trade-send:hover:not(:disabled) {
+    background-color: var(--dark-button-hover) !important;
+}
+
+html[data-site-theme="dark"] .trade-tile:hover .trade-tile-action {
+    color: var(--dark-text);
+    background: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .trade-tile:hover .trade-tile-action.disabled {
+    color: var(--dark-muted);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .trade-tile.selected .trade-tile-card {
+    background-color: #393044 !important;
+    border-color: var(--dark-accent) !important;
+}
+
+html[data-site-theme="dark"] .sets-page a.sets-tab,
+html[data-site-theme="dark"] .develop-page .develop-tab,
+html[data-site-theme="dark"] .group-search-table th {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .sets-page a.sets-tab.selected,
+html[data-site-theme="dark"] .develop-page .develop-tab.active {
+    color: var(--dark-heading);
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .develop-page .develop-settings-link {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .develop-page .develop-settings-link:is(.active, :hover, :focus-visible),
+html[data-site-theme="dark"] .sets-list li:is(.selected, :hover) {
+    color: var(--dark-heading);
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] .sets-item:hover,
+html[data-site-theme="dark"] .sets-item-menu button:hover {
+    background-color: var(--dark-surface-raised) !important;
+    border-color: var(--dark-accent) !important;
+}
+
+html[data-site-theme="dark"] :is(.sets-btn-large, .btn-checkout):disabled {
+    opacity: .6;
+}
+
+html[data-site-theme="dark"] .admin-main .btn-danger {
+    color: #fff;
+    background-color: #ad343d;
+    border-color: #ad343d;
+}
+
+html[data-site-theme="dark"] .admin-main .btn-danger:is(:hover, :focus-visible) {
+    background-color: #c13b46;
+    border-color: #c13b46;
+}
+
+html[data-site-theme="dark"] .admin-pill.ok,
+html[data-site-theme="dark"] .admin-main .text-bg-success {
+    color: #bde7cd !important;
+    background-color: #1f5134 !important;
+}
+
+html[data-site-theme="dark"] .admin-pill.danger,
+html[data-site-theme="dark"] .admin-main .text-bg-danger {
+    color: #fff !important;
+    background-color: #ad343d !important;
+}
+
+html[data-site-theme="dark"] .blog-more h2 {
+    color: var(--dark-heading);
+}
+
+html[data-site-theme="dark"] :is(.not-approved-box, .not-approved-offense) {
+    color: var(--dark-text);
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .not-approved-box button {
+    color: var(--dark-text);
+    background: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .not-approved-box button:hover:not(:disabled) {
+    border-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .not-approved-box button:disabled {
+    color: var(--dark-muted);
+    opacity: .6;
+}
+
+html[data-site-theme="dark"] .not-approved-box input[type="checkbox"] {
+    appearance: auto;
+    accent-color: var(--dark-button);
+    background: none;
+}
+
+html[data-site-theme="dark"] .site-shell .header-search-option:is(.selected, :hover) {
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] .chat-person img {
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .chat-people-title {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .forum-bar {
+    background-color: var(--dark-button);
+}
+
+html[data-site-theme="dark"] .site-shell .forum-bar :is(a, b) {
+    color: #fff;
+}
+
+html[data-site-theme="dark"] #catalog :is(a.selected, a.breadCrumbFilter) {
+    color: var(--dark-heading) !important;
+}
+
+html[data-site-theme="dark"] .messages-empty {
+    color: var(--dark-muted);
+    background-color: var(--dark-surface);
+}
+
+html[data-site-theme="dark"] .forum-page a.forum-summary b {
+    color: var(--dark-heading);
+}
+
+html[data-site-theme="dark"] .forum-page a.forum-summary span {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] .forum-page a.forum-summary:hover b {
+    color: var(--dark-accent-bright);
+}
+
+/* the big card list above outranks 2 classes */
+html[data-site-theme="dark"] .profile-heading .profile-view-buttons button.profile-view-button.selected {
+    color: #fff !important;
+    background-color: var(--dark-button) !important;
+    border-color: var(--dark-button) !important;
+}
+
+html[data-site-theme="dark"] .develop-page a.develop-btn.develop-btn-negative {
+    color: var(--dark-text) !important;
+    background: var(--dark-surface-raised) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-site-theme="dark"] .site-shell :is(.settings-btn, .settings-btn-primary):disabled {
+    opacity: .6;
+    cursor: default;
+}
+
+/* obc badge is near black */
+html[data-site-theme="dark"] :is(.home-club, .profile-club, .trade-club) {
+    background-image: url("../assets/bc-dark.svg");
+}
+
+html[data-site-theme="dark"] .site-shell .settings-btn {
+    color: var(--dark-text);
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-btn:is(:hover:not(:disabled), :focus-visible) {
+    border-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .site-shell :is(.settings-dev-switch, .settings-css-actions) {
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-shell :is(.settings-dev-hint, .settings-dev-size, .settings-url-status) {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-dev-state {
+    color: var(--dark-muted);
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-dev-state.on {
+    color: #fff;
+    background-color: #1f7a4b;
+}
+
+html[data-site-theme="dark"] .nonebux-notice {
+    color: var(--dark-text);
+    background: var(--dark-accent-soft);
+    border-color: var(--dark-accent);
+}
+
+html[data-site-theme="dark"] .nonebux-grid .cell-content {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+html[data-site-theme="dark"] .settings-modal-close {
+    filter: brightness(0) invert(1);
+    opacity: .6;
+}
+
+html[data-site-theme="dark"] .settings-modal-close:is(:hover, :focus-visible) {
+    opacity: .9;
+}
+
+/* catalog menu uses 2 ids */
+html[data-site-theme="dark"] #catalog #dropdown :is(a, span) {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] #catalog #dropdown li:hover,
+html[data-site-theme="dark"] #catalog #dropdown li.slideHeader:hover {
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] #catalog #dropdown li.subcategories:hover {
+    background-color: var(--dark-surface-raised);
+}
+
+html[data-site-theme="dark"] #catalog #dropdown li.slideHeader {
+    border-bottom-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] #catalog .HoverInfo {
+    color: var(--dark-text);
+}
+
+html[data-site-theme="dark"] #catalog .CatalogItemInfoLabel {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] :is(.profile-friend-link:hover .profile-friend-name, .profile-asset a[href]:hover .profile-asset-name) {
+    color: var(--dark-accent-bright);
+}
+
+html[data-site-theme="dark"] .site-shell .header-menu li>a {
+    color: var(--dark-text);
+}
+html[data-site-theme="dark"] .site-shell .settings-theme-meta {
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .site-shell .settings-theme-meta .settings-hint {
+    color: var(--dark-muted);
+}
+
+html[data-site-theme="dark"] .promo-items img {
+    background-color: var(--dark-surface-raised);
+    border-color: var(--dark-border);
+}
+
+html[data-site-theme="dark"] .promo-owned {
+    color: var(--dark-muted);
+}

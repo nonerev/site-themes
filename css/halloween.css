@@ -1,0 +1,218 @@
+/*
+ * @name Halloween
+ * @author mrrpmeowfurry
+ * @description it's spooky month!
+ * @credit Plain Pumpkin by stevepetmonkey, Openclipart (CC0) https://openclipart.org/detail/86665/plain-pumpkin
+ * @credit Pumpkin by Simanek, Openclipart (CC0) https://openclipart.org/detail/89287/pumpkin
+ * @credit A crown pumpkin by nello, Openclipart (CC0) https://openclipart.org/detail/203193/a-crown-pumpkin
+ */
+
+html[data-site-theme="halloween"] :where(body) {
+    background-color: #fbf2df !important;
+}
+
+/* these paint their own white */
+html[data-site-theme="halloween"] .home-page,
+html[data-site-theme="halloween"] .games-row,
+html[data-site-theme="halloween"] .nonebux-page,
+html[data-site-theme="halloween"] .develop-splash-page,
+html[data-site-theme="halloween"] .develop-page,
+html[data-site-theme="halloween"] .avatar-page,
+html[data-site-theme="halloween"] .avatar-tab-panel,
+html[data-site-theme="halloween"] .avatar-tabs button.tab-active,
+html[data-site-theme="halloween"] .rbx-content,
+html[data-site-theme="halloween"] .bc-body,
+html[data-site-theme="halloween"] .login-body,
+html[data-site-theme="halloween"] .sets-pane,
+html[data-site-theme="halloween"] .abuse-report-page,
+html[data-site-theme="halloween"] .badges-page,
+html[data-site-theme="halloween"] .forum-page,
+html[data-site-theme="halloween"] .group-page,
+html[data-site-theme="halloween"] .info-page,
+html[data-site-theme="halloween"] .money-page {
+    background-color: transparent;
+}
+
+html[data-site-theme="halloween"] .site-shell .site-main {
+    position: relative;
+    isolation: isolate;
+    background-color: #fbf2df;
+}
+
+html[data-site-theme="halloween"] .site-shell .site-main>main {
+    position: relative;
+    isolation: isolate;
+}
+
+html[data-site-theme="halloween"] .site-shell .site-main>main::before {
+    content: "";
+    position: fixed;
+    right: 0;
+    bottom: 36px;
+    z-index: -1;
+    width: clamp(240px, 33vw, 440px);
+    height: clamp(93px, 12.7vw, 170px);
+    background:
+        url("../assets/plain-pumpkin.svg") no-repeat 50% calc(100% + clamp(8px, 1.4vw, 18px)) / 46% auto,
+        url("../assets/yellow-pumpkin.svg") no-repeat 12% 100% / 26% auto,
+        url("../assets/crown-pumpkin.svg") no-repeat 88% 100% / 27% auto;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+html[data-site-theme="halloween"] .site-shell::before {
+    left: 0;
+}
+
+html[data-site-theme="halloween"] .site-shell::after {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+html[data-site-theme="halloween"] .site-shell.games-list::before {
+    content: none;
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-header {
+    background: linear-gradient(105deg, #1f1611 0%, #3a2116 58%, #6f3518 100%);
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ff7518;
+    pointer-events: none;
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-links a:hover,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-links a:focus,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-account-links a:hover,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-account-links a:focus {
+    color: #ff7518;
+    background-color: rgba(255, 117, 24, 0.12);
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-icon-item:hover,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-icon-item:focus {
+    color: #ff7518;
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-icon-item:hover [class^="icon-nav-"],
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-icon-item:focus-visible [class^="icon-nav-"],
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .nav-toggle:hover .icon-nav-menu,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .header-search-toggle button:hover .icon-nav-search-white {
+    filter: drop-shadow(0 0 2px #ff7518);
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-header .header-icon-item:hover .icon-nav-message,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-header .header-icon-item:focus-visible .icon-nav-message {
+    filter: brightness(0) invert(1) drop-shadow(0 0 2px #ff7518);
+}
+
+html[data-site-theme="halloween"] .site-shell .left-nav {
+    background-color: #261b14;
+}
+
+html[data-site-theme="halloween"] .site-shell .left-nav-user a,
+html[data-site-theme="halloween"] .site-shell .left-nav li .left-nav-link,
+html[data-site-theme="halloween"] .site-shell .left-nav .left-nav-events {
+    color: #f1e5cf;
+}
+
+html[data-site-theme="halloween"] .site-shell .left-nav-divider {
+    background-color: rgba(241, 229, 207, 0.2);
+}
+
+html[data-site-theme="halloween"] .site-shell .left-nav-scroll [class^="icon-nav-"] {
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+}
+
+html[data-site-theme="halloween"] .site-shell .left-nav li .left-nav-link {
+    position: relative;
+}
+
+html[data-site-theme="halloween"] .site-shell .left-nav li .left-nav-link:hover,
+html[data-site-theme="halloween"] .site-shell .left-nav li .left-nav-link:focus-visible,
+html[data-site-theme="halloween"] .site-shell .left-nav-user a:hover {
+    color: #ff7518;
+}
+
+html[data-site-theme="halloween"] .site-shell .left-nav li .left-nav-link:hover::before,
+html[data-site-theme="halloween"] .site-shell .left-nav li .left-nav-link:focus-visible::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 4px;
+    background-color: #ff7518;
+}
+
+html[data-site-theme="halloween"] .site-shell .left-nav-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(241, 229, 207, 0.25);
+}
+
+html[data-site-theme="halloween"] .site-shell.white-page .site-main {
+    flex: 1 0 auto;
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer {
+    background: linear-gradient(135deg, #1f1611 0%, #312019 100%);
+    box-shadow: inset 0 2px 0 #ff7518;
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-links a,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-links a:link,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-links a:visited {
+    color: #cdbfa8;
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-links a:hover,
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-links a:focus {
+    color: #ff7518;
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-note {
+    color: #b3a48f;
+}
+
+html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-note a {
+    color: #c9a2f2;
+}
+
+html[data-site-theme="halloween"] .site-shell .chat-tab {
+    background-color: #1f1611;
+    box-shadow: inset 0 2px 0 #ff7518;
+}
+
+@media (min-width: 1320px) {
+    html[data-site-theme="halloween"] .site-shell.white-page.logged-in::before {
+        left: 175px;
+    }
+}
+
+@media (min-width: 1688px) {
+    html[data-site-theme="halloween"] .site-shell.logged-in:not(.side-ads)::before {
+        left: 175px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    html[data-site-theme="halloween"] .site-shell::before,
+    html[data-site-theme="halloween"] .site-shell::after {
+        top: 80px;
+    }
+
+    html[data-site-theme="halloween"] .site-shell .site-main>main::before {
+        bottom: 0;
+        width: clamp(170px, 46vw, 280px);
+        height: clamp(113px, 31vw, 187px);
+        opacity: 0.16;
+    }
+}

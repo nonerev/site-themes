@@ -1,0 +1,235 @@
+/*
+ * @name Sakura
+ * @author mrrpmeowfurry
+ * @description Oooh Sakura! So kawaii!
+ * @credit Cherry blossom by Firkin, Openclipart (CC0) https://openclipart.org/detail/266298/cherry-blossom
+ * @credit Sakura flower by ozant, Openclipart (CC0) https://openclipart.org/detail/238032/sakura-flower
+ */
+
+html[data-site-theme="sakura"] :where(body) {
+    background-color: #fff7fa !important;
+}
+
+/* these paint their own white */
+html[data-site-theme="sakura"] .home-page,
+html[data-site-theme="sakura"] .games-row,
+html[data-site-theme="sakura"] .nonebux-page,
+html[data-site-theme="sakura"] .develop-splash-page,
+html[data-site-theme="sakura"] .develop-page,
+html[data-site-theme="sakura"] .avatar-page,
+html[data-site-theme="sakura"] .avatar-tab-panel,
+html[data-site-theme="sakura"] .avatar-tabs button.tab-active,
+html[data-site-theme="sakura"] .rbx-content,
+html[data-site-theme="sakura"] .bc-body,
+html[data-site-theme="sakura"] .login-body,
+html[data-site-theme="sakura"] .sets-pane,
+html[data-site-theme="sakura"] .abuse-report-page,
+html[data-site-theme="sakura"] .badges-page,
+html[data-site-theme="sakura"] .forum-page,
+html[data-site-theme="sakura"] .group-page,
+html[data-site-theme="sakura"] .info-page,
+html[data-site-theme="sakura"] .money-page {
+    background-color: transparent;
+}
+
+html[data-site-theme="sakura"] .site-shell {
+    position: relative;
+}
+
+html[data-site-theme="sakura"] .site-shell .site-main {
+    position: relative;
+    isolation: isolate;
+    background-color: #fff7fa;
+}
+
+html[data-site-theme="sakura"] .site-shell .site-main>main {
+    position: relative;
+    isolation: isolate;
+}
+
+html[data-site-theme="sakura"] .site-shell .site-main>main::before {
+    content: "";
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    z-index: -1;
+    width: clamp(220px, 30vw, 440px);
+    height: clamp(164px, 22.4vw, 328px);
+    background: url("../assets/cherry-blossom-branch.svg") no-repeat right bottom / contain;
+    opacity: 0.18;
+    transform: scaleX(-1);
+    pointer-events: none;
+}
+
+html[data-site-theme="sakura"] .site-shell::before {
+    left: 0;
+}
+
+html[data-site-theme="sakura"] .site-shell::after {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+html[data-site-theme="sakura"] .site-shell.games-list::before,
+html[data-site-theme="sakura"] .site-shell.games-list::after {
+    content: none;
+}
+
+html[data-site-theme="sakura"] .site-shell>.site-main,
+html[data-site-theme="sakura"] .site-shell>.site-footer {
+    position: relative;
+    z-index: 1;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-header {
+    background: linear-gradient(105deg, #5b2a42 0%, #71344f 58%, #9b4b6b 100%);
+    box-shadow: inset 0 -2px 0 #e987a5;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-logo {
+    position: relative;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-logo::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 100%;
+    width: 17px;
+    height: 17px;
+    margin-left: -3px;
+    background: url("../assets/sakura-flower.svg") no-repeat 0 0 / contain;
+    pointer-events: none;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-links a:hover,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-links a:focus,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-account-links a:hover,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-account-links a:focus {
+    color: #ffd5e0;
+    background-color: rgba(242, 154, 177, 0.14);
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-icon-item:hover,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-icon-item:focus {
+    color: #ffd5e0;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-icon-item:hover [class^="icon-nav-"],
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-icon-item:focus-visible [class^="icon-nav-"],
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .nav-toggle:hover .icon-nav-menu,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-search-toggle button:hover .icon-nav-search-white {
+    filter: drop-shadow(0 0 2px #f29ab1);
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-header .header-icon-item:hover .icon-nav-message,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-header .header-icon-item:focus-visible .icon-nav-message {
+    filter: brightness(0) invert(1) drop-shadow(0 0 2px #f29ab1);
+}
+
+html[data-site-theme="sakura"] .site-shell .left-nav {
+    background-color: #fff0f4;
+}
+
+html[data-site-theme="sakura"] .site-shell .left-nav-user a,
+html[data-site-theme="sakura"] .site-shell .left-nav li .left-nav-link,
+html[data-site-theme="sakura"] .site-shell .left-nav .left-nav-events {
+    color: #5b2a42;
+}
+
+html[data-site-theme="sakura"] .site-shell .left-nav-divider {
+    background-color: rgba(91, 42, 66, 0.18);
+}
+
+html[data-site-theme="sakura"] .site-shell .left-nav li .left-nav-link {
+    position: relative;
+}
+
+html[data-site-theme="sakura"] .site-shell .left-nav li .left-nav-link:hover,
+html[data-site-theme="sakura"] .site-shell .left-nav li .left-nav-link:focus-visible,
+html[data-site-theme="sakura"] .site-shell .left-nav-user a:hover {
+    color: #c34f72;
+}
+
+html[data-site-theme="sakura"] .site-shell .left-nav li .left-nav-link:hover::before,
+html[data-site-theme="sakura"] .site-shell .left-nav li .left-nav-link:focus-visible::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 4px;
+    background-color: #e987a5;
+}
+
+html[data-site-theme="sakura"] .site-shell .left-nav-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(91, 42, 66, 0.25);
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-footer {
+    background: linear-gradient(135deg, #5b2a42 0%, #442034 100%);
+    box-shadow: inset 0 2px 0 #e987a5;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-footer-links a,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-footer-links a:link,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-footer-links a:visited {
+    color: #f6d5df;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-footer-links a:hover,
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-footer-links a:focus {
+    color: #ffd5e0;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-footer-note {
+    color: #d8aebb;
+}
+
+html[data-site-theme="sakura"] :is(.site-shell, .login-page) .site-footer-note a {
+    color: #ffd5e0;
+}
+
+html[data-site-theme="sakura"] .site-shell .chat-tab {
+    background-color: #5b2a42;
+    box-shadow: inset 0 2px 0 #e987a5;
+}
+
+@media (min-width: 1320px) {
+    html[data-site-theme="sakura"] .site-shell.white-page .header-logo::after {
+        top: 10px;
+        width: 18px;
+        height: 18px;
+        margin-left: -12px;
+    }
+}
+
+@media (min-width: 1688px) {
+    html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-logo::after {
+        top: 10px;
+        width: 18px;
+        height: 18px;
+        margin-left: -12px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    html[data-site-theme="sakura"] .site-shell::before,
+    html[data-site-theme="sakura"] .site-shell::after {
+        top: 80px;
+    }
+
+    html[data-site-theme="sakura"] .site-shell .site-main>main::before {
+        bottom: 0;
+        width: clamp(125px, 33vw, 220px);
+        height: clamp(149px, 40vw, 262px);
+        opacity: 0.14;
+    }
+
+    html[data-site-theme="sakura"] :is(.site-shell, .login-page) .header-logo::after {
+        top: 13px;
+        width: 13px;
+        height: 13px;
+    }
+}

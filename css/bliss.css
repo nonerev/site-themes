@@ -317,3 +317,60 @@ html .maintenance,
 html .begin {
     background-color: #0074bd;
 }
+
+html .link-primary:hover,
+html .link-info:hover,
+html .page-link:hover,
+html .page-link:focus {
+    color: #005a94 !important;
+}
+
+html .form-control:focus,
+html .form-select:focus,
+html .form-check-input:focus {
+    border-color: #2a93d6 !important;
+}
+
+html .nav-link {
+    --bs-nav-link-hover-color: #005a94;
+}
+
+html .nav-tabs {
+    --bs-nav-tabs-link-active-color: #005a94;
+}
+
+html .alert-primary,
+html .alert-info {
+    --bs-alert-color: #003f67;
+    --bs-alert-bg: #e1f0fa;
+    --bs-alert-border-color: #a6d3ee;
+    --bs-alert-link-color: #003f67;
+}
+
+html .list-group-item-primary,
+html .list-group-item-info {
+    color: #003f67;
+    background-color: #e1f0fa;
+    border-color: #a6d3ee;
+}
+
+html .table-primary,
+html .table-info {
+    --bs-table-color: #0a2a40;
+    --bs-table-bg: #e1f0fa;
+    --bs-table-border-color: #a6d3ee;
+    --bs-table-striped-bg: #d8eaf6;
+    --bs-table-active-bg: #cde4f3;
+    --bs-table-hover-bg: #d2e7f4;
+}
+
+html .accordion-button:not(.collapsed) {
+    color: #005a94;
+    background-color: #e1f0fa;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #a6d3ee;
+}
+
+html .form-range::-webkit-slider-thumb:active,
+html .form-range::-moz-range-thumb:active {
+    background-color: #2a93d6;
+}

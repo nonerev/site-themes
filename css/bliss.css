@@ -1,7 +1,7 @@
 /*
  * @name Bliss Blue
  * @author xemp xan
- * @description Light theme with a blue top bar
+ * @description Light theme with a blue top bar n crap
  */
 
 :root {
@@ -373,4 +373,118 @@ html .accordion-button:not(.collapsed) {
 html .form-range::-webkit-slider-thumb:active,
 html .form-range::-moz-range-thumb:active {
     background-color: #2a93d6;
+}
+
+html .home-feed-name a,
+html .home-feed-copy a {
+    color: #0074bd;
+}
+
+html .home-feed-name a:hover,
+html .home-feed-name a:focus,
+html .home-feed-copy a:hover,
+html .home-feed-copy a:focus {
+    color: #005a94;
+}
+
+html .home-game-card-footer a,
+html .profile-game-card-footer a {
+    color: #0074bd;
+}
+
+html .home-game-card-footer a:hover,
+html .home-game-card-footer a:focus,
+html .profile-game-card-footer a:hover,
+html .profile-game-card-footer a:focus {
+    color: #005a94;
+}
+
+html .game-creator a,
+html .game-play-hint a,
+html .game-text-link,
+html .game-stat-value a,
+html .game-board-name a,
+html .game-vip-members a,
+html .game-share-btn {
+    color: #0074bd;
+}
+
+html .game-creator a:hover,
+html .game-creator a:focus,
+html .game-play-hint a:hover,
+html .game-play-hint a:focus,
+html .game-text-link:hover,
+html .game-text-link:focus,
+html .game-stat-value a:hover,
+html .game-stat-value a:focus,
+html .game-board-name a:hover,
+html .game-board-name a:focus,
+html .game-vip-members a:hover,
+html .game-vip-members a:focus,
+html .game-share-btn:hover,
+html .game-share-btn:focus {
+    color: #005a94;
+}
+
+html .game-tab.active,
+html .game-tab:hover,
+html .game-tab:focus-visible {
+    box-shadow: 0 -4px 0 0 #0074bd inset !important;
+}
+
+html .game-btn-secondary,
+html .game-vip-banner .game-btn-secondary {
+    color: #fff;
+    background-color: #0074bd !important;
+    border-color: #0074bd !important;
+}
+
+html .game-btn-secondary:hover,
+html .game-btn-secondary:focus,
+html .game-vip-banner .game-btn-secondary:hover,
+html .game-vip-banner .game-btn-secondary:focus {
+    color: #fff;
+    background-color: #005a94 !important;
+    border-color: #005a94 !important;
+}
+
+html .catalog-page a:link:not(.btn),
+html .catalog-page a:visited:not(.btn) {
+    color: #0074bd;
+}
+
+html .catalog-page a:link:not(.btn):hover,
+html .catalog-page a:link:not(.btn):focus,
+html .catalog-page a:visited:not(.btn):hover,
+html .catalog-page a:visited:not(.btn):focus {
+    color: #2a93d6;
+}
+
+html .games-page .games-filter-btn.show,
+html .games-page .games-filter-btn[aria-expanded="true"] {
+    background-color: #0074bd !important;
+    border-color: #0074bd !important;
+    color: #fff !important;
+}
+
+html .games-page .games-filter-menu a:hover,
+html .games-page .games-filter-menu a:focus,
+html .games-page .games-filter-menu a.active,
+html .games-page .games-filter-menu a.selected,
+html .games-page .games-filter-menu li:hover,
+html .games-page .games-filter-menu li.active,
+html .games-page .games-filter-menu li.selected {
+    box-shadow: 4px 0 0 0 #0074bd inset !important;
+}
+
+html .games-page .games-filter-btn:hover,
+html .games-page .games-filter-btn:focus-visible {
+    background-color: #0074bd !important;
+    border-color: #0074bd !important;
+    color: #fff !important;
+}
+
+html .games-page .games-filter-btn:hover .games-filter-arrow,
+html .games-page .games-filter-btn:focus-visible .games-filter-arrow {
+    filter: brightness(0) invert(1);
 }

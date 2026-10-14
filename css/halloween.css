@@ -182,7 +182,7 @@ html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-not
 }
 
 html[data-site-theme="halloween"] :is(.site-shell, .login-page) .site-footer-note a {
-    color: #c9a2f2;
+    color: #ff922e;
 }
 
 html[data-site-theme="halloween"] .site-shell .chat-tab {
@@ -215,4 +215,118 @@ html[data-site-theme="halloween"] .site-shell .chat-tab {
         height: clamp(113px, 31vw, 187px);
         opacity: 0.16;
     }
+}
+html[data-site-theme="halloween"] {
+    --halloween-accent: #f27a18;
+    --halloween-accent-hover: #ff922e;
+    --halloween-accent-dark: #bd4f0b;
+    --halloween-accent-soft: rgba(242, 122, 24, 0.14);
+    --bs-primary: #f27a18;
+    --bs-primary-rgb: 242, 122, 24;
+    --bs-primary-text-emphasis: #8f3900;
+    --bs-primary-bg-subtle: #fff0df;
+    --bs-primary-border-subtle: #f4c28f;
+    --bs-link-color: #bd4f0b;
+    --bs-link-color-rgb: 189, 79, 11;
+    --bs-link-hover-color: #e5650d;
+    --bs-link-hover-color-rgb: 229, 101, 13;
+    --bs-info: #f27a18;
+    --bs-info-rgb: 242, 122, 24;
+}
+
+html[data-site-theme="halloween"] .header-brand {
+    max-width: 170px;
+}
+
+html[data-site-theme="halloween"] .header-logo {
+    width: 138px;
+    height: 40px;
+    padding: 2px 0;
+}
+
+html[data-site-theme="halloween"] .header-logo span {
+    width: 136px;
+    height: 36px;
+    background: url("../assets/halloween-logo.webp") no-repeat left center / contain;
+    mix-blend-mode: screen;
+}
+
+html[data-site-theme="halloween"] .site-main a:not([class*="btn"]),
+html[data-site-theme="halloween"] .login-page a:not([class*="btn"]) {
+    color: var(--halloween-accent-dark);
+}
+
+html[data-site-theme="halloween"] .site-main a:not([class*="btn"]):hover,
+html[data-site-theme="halloween"] .site-main a:not([class*="btn"]):focus-visible,
+html[data-site-theme="halloween"] .login-page a:not([class*="btn"]):hover,
+html[data-site-theme="halloween"] .login-page a:not([class*="btn"]):focus-visible {
+    color: var(--halloween-accent-hover);
+}
+
+html[data-site-theme="halloween"] :is(
+    .btn-primary,
+    .btn-primary-md, .btn-primary-sm,
+    .btn-large-purple,
+    .money-btn-purple,
+    .settings-btn-primary,
+    .home-btn-primary,
+    .messages-btn-primary,
+    .group-join
+) {
+    border-color: var(--halloween-accent-dark) !important;
+    background-color: var(--halloween-accent) !important;
+    background-image: linear-gradient(#ff9c3f, var(--halloween-accent) 52%, var(--halloween-accent-dark)) !important;
+    color: #fff !important;
+}
+
+html[data-site-theme="halloween"] :is(
+    .btn-primary,
+    .btn-primary-md, .btn-primary-sm,
+    .btn-large-purple,
+    .money-btn-purple,
+    .settings-btn-primary,
+    .home-btn-primary,
+    .messages-btn-primary,
+    .group-join
+):is(:hover, :focus-visible) {
+    border-color: #a84205 !important;
+    background-color: var(--halloween-accent-hover) !important;
+    background-image: linear-gradient(#ffad5c, var(--halloween-accent-hover) 52%, #d75a0a) !important;
+}
+
+html[data-site-theme="halloween"] :is(
+    .btn-primary,
+    .btn-primary-md, .btn-primary-sm,
+    .btn-large-purple,
+    .money-btn-purple,
+    .settings-btn-primary,
+    .home-btn-primary,
+    .messages-btn-primary,
+    .group-join
+):disabled,
+html[data-site-theme="halloween"] :is(.btn-primary, .btn-primary-md, .btn-primary-sm, .settings-btn-primary):is(.disabled, [aria-disabled="true"]) {
+    border-color: #c9c2b8 !important;
+    background: #e5dfd5 !important;
+    color: #847b70 !important;
+}
+
+html[data-site-theme="halloween"] :is(.group-button, .group-text-link) {
+    color: var(--halloween-accent-dark);
+}
+
+html[data-site-theme="halloween"] :is(.group-join, .forum-button-primary, .avatar-tabs button.tab-active) {
+    --bs-btn-bg: var(--halloween-accent);
+    --bs-btn-border-color: var(--halloween-accent-dark);
+    --bs-btn-hover-bg: var(--halloween-accent-hover);
+    --bs-btn-hover-border-color: var(--halloween-accent-dark);
+}
+
+html[data-site-theme="halloween"] [class*="tab"].active,
+html[data-site-theme="halloween"] [role="tab"][aria-selected="true"] {
+    border-color: var(--halloween-accent) !important;
+    box-shadow: inset 0 -3px 0 var(--halloween-accent);
+}
+
+html[data-site-theme="halloween"] .site-footer-note a {
+    color: #ff922e;
 }

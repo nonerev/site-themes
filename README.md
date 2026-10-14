@@ -7,6 +7,7 @@
 ## Structure
 
 - `css/dark.css` Dark themee :3
+- `css/oled.css` pure black 
 - `css/halloween.css` it's spooky month!
 - `css/sakura.css` Oooh Sakura! So kawaii!
 - `assets/` Pictures the css uses, as `../assets/name.svg`
@@ -25,7 +26,7 @@ It's saved for your account in that browser only, up to 256 KB. The stylesheet u
 
 A stylesheet url has to be https and served as `text/css`. Relative urls inside it load from its own host. In pasted css use full https urls or `/img/themes/...`.
 
-`<html>` has `data-site-theme` (`classic`, `dark`, `halloween` or `sakura`) and `data-custom-theme` while yours is on. Dark's colors are variables, so recoloring it is quick:
+`<html>` has `data-site-theme` (`classic`, `dark`, `oled`, `halloween` or `sakura`) and `data-custom-theme` while yours is on. Dark's colors are variables, so recoloring it is quick:
 
 ```css
 html[data-site-theme="dark"],

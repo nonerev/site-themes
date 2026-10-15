@@ -235,7 +235,7 @@ html[data-site-theme="halloween"] {
 }
 
 html[data-site-theme="halloween"] .header-brand {
-    max-width: 170px;
+    max-width: 190px;
 }
 
 html[data-site-theme="halloween"] .header-logo {
@@ -329,4 +329,29 @@ html[data-site-theme="halloween"] [role="tab"][aria-selected="true"] {
 
 html[data-site-theme="halloween"] .site-footer-note a {
     color: #ff922e;
+}
+
+@media (max-width: 991px) {
+    html[data-site-theme="halloween"] .header-brand {
+        max-width: 96px;
+    }
+
+    html[data-site-theme="halloween"] .header-logo {
+        width: 42px;
+        height: 40px;
+        padding: 2px;
+    }
+
+    html[data-site-theme="halloween"] .header-logo span {
+        width: 38px;
+        height: 36px;
+        background-image: url("../assets/halloween-logo-small.png");
+    }
+}
+
+@media (min-width: 992px) {
+    html[data-site-theme="halloween"] .header-search,
+    html[data-site-theme="halloween"] .header-right {
+        width: 20%;
+    }
 }
